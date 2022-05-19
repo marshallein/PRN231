@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4f95ef12-1b03-4b29-9da1-b3190b7adaa6": {
+      "ProjectGuid": "4f95ef12-1b03-4b29-9da1-b3190b7adaa6",
+      "DisplayName": "ApiClientWeb",
+      "ColorIndex": 0
+    },
+    "a4a66b34-8a2f-4e95-8c6a-ef0f37175610": {
+      "ProjectGuid": "a4a66b34-8a2f-4e95-8c6a-ef0f37175610",
+      "DisplayName": "ApiWeb",
+      "ColorIndex": 1
+    },
+    "d55aeecc-b8fa-4046-9e36-be3fb2c0bbc8": {
+      "ProjectGuid": "d55aeecc-b8fa-4046-9e36-be3fb2c0bbc8",
+      "DisplayName": "ApiWebCilent",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

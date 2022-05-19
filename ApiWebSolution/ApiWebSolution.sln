@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWeb", "ApiWeb\ApiWeb.csproj", "{A4A66B34-8A2F-4E95-8C6A-EF0F37175610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWeb", "ApiWeb\ApiWeb.csproj", "{A4A66B34-8A2F-4E95-8C6A-EF0F37175610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiClientWeb", "ApiClientWeb\ApiClientWeb.csproj", "{4F95EF12-1B03-4B29-9DA1-B3190B7ADAA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWebCilent", "ApiWebCilent\ApiWebCilent.csproj", "{D55AEECC-B8FA-4046-9E36-BE3FB2C0BBC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A4A66B34-8A2F-4E95-8C6A-EF0F37175610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A66B34-8A2F-4E95-8C6A-EF0F37175610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A66B34-8A2F-4E95-8C6A-EF0F37175610}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F95EF12-1B03-4B29-9DA1-B3190B7ADAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F95EF12-1B03-4B29-9DA1-B3190B7ADAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F95EF12-1B03-4B29-9DA1-B3190B7ADAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F95EF12-1B03-4B29-9DA1-B3190B7ADAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55AEECC-B8FA-4046-9E36-BE3FB2C0BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55AEECC-B8FA-4046-9E36-BE3FB2C0BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55AEECC-B8FA-4046-9E36-BE3FB2C0BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55AEECC-B8FA-4046-9E36-BE3FB2C0BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
