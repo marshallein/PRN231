@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BusinessObject.Models
 {
@@ -10,8 +11,8 @@ namespace BusinessObject.Models
         public DateTime Author_order { get; set; }
         public int? Royalty_percentage { get; set; }
 
-        public virtual Author Author { get; set; }
-        public virtual Book Book { get; set; }
+        public Author Author { get; set; }
+        public Book Book { get; set; }
 
     }
 }

@@ -13,8 +13,8 @@ namespace BusinessObject.Models
         public string Country { get; set; }
         public string State { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public ICollection<User> Users { get; set; }
 
-        public virtual ICollection<Book> Books { get; set; }
+        public ICollection<Book> Books { get; set; }
     }
 }

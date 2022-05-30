@@ -69,7 +69,7 @@ namespace BusinessObject.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Pub_id")
+                    b.Property<int>("Pub_id")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Publisher_date")
@@ -218,7 +218,9 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Books")
-                        .HasForeignKey("Pub_id");
+                        .HasForeignKey("Pub_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Pub");
                 });
@@ -245,7 +247,7 @@ namespace BusinessObject.Migrations
                         .HasForeignKey("Pub_id");
 
                     b.HasOne("BusinessObject.Models.Role", "Role")
-                        .WithMany("Users")
+                        .WithMany()
                         .HasForeignKey("Role_id");
 
                     b.Navigation("Pub");
@@ -267,11 +269,6 @@ namespace BusinessObject.Migrations
                 {
                     b.Navigation("Books");
 
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("BusinessObject.Models.Role", b =>
-                {
                     b.Navigation("Users");
                 });
 #pragma warning restore 612, 618

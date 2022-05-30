@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessObject.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220529145237_initial_ver_3")]
-    partial class initial_ver_3
+    [Migration("20220530104855_initial_2")]
+    partial class initial_2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,7 +36,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email_address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("First_name")
@@ -72,7 +71,7 @@ namespace BusinessObject.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Pub_id")
+                    b.Property<int>("Pub_id")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Publisher_date")
@@ -141,7 +140,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Publisher_name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
@@ -179,7 +177,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("First_name")
-                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -187,7 +184,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Last_name")
-                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -224,7 +220,9 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Books")
-                        .HasForeignKey("Pub_id");
+                        .HasForeignKey("Pub_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Pub");
                 });
@@ -251,7 +249,7 @@ namespace BusinessObject.Migrations
                         .HasForeignKey("Pub_id");
 
                     b.HasOne("BusinessObject.Models.Role", "Role")
-                        .WithMany("Users")
+                        .WithMany()
                         .HasForeignKey("Role_id");
 
                     b.Navigation("Pub");
@@ -273,11 +271,6 @@ namespace BusinessObject.Migrations
                 {
                     b.Navigation("Books");
 
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("BusinessObject.Models.Role", b =>
-                {
                     b.Navigation("Users");
                 });
 #pragma warning restore 612, 618

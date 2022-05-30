@@ -16,7 +16,7 @@ namespace BusinessObject.Models
         public string Title { get; set; }
         public string Type { get; set; }
 
-        public virtual Publisher Pub { get; set; }
+        public Publisher Pub { get; set; }
         [Required]
         public int Price { get; set; }
         public int Advance { get; set; }
@@ -25,8 +25,9 @@ namespace BusinessObject.Models
         [MaxLength(100)]
         public string Notes { get; set; }
         public DateTime Publisher_date { get; set; }
-
-        public virtual ICollection<BookAuthor> BookAuthors { get; set; }
+        [ForeignKey("Pub")]
+        public int Pub_id { get; set; }
+        public ICollection<BookAuthor> BookAuthors { get; set; }
 
 
     }

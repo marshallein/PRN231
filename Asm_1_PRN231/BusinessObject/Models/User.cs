@@ -27,7 +27,7 @@ namespace BusinessObject.Models
         public string Last_name { get; set; }
         public DateTime Hire_date { get; set; }
 
-        public virtual Role Role { get; set; }
-        public virtual Publisher Pub { get; set; }
+        public Role Role { get; set; }
+        public Publisher Pub { get; set; }
     }
 }

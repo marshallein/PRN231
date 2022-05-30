@@ -14,7 +14,5 @@ namespace BusinessObject.Models
         public int Role_id { get; set; }
 
         public string Role_desc { get; set; }
-
-        public virtual ICollection<User> Users { get; set; }
     }
 }

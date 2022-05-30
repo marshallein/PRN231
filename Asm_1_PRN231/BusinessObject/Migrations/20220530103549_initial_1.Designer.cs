@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessObject.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220529144504_initial_ver_2")]
-    partial class initial_ver_2
+    [Migration("20220530103549_initial_1")]
+    partial class initial_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,7 +36,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email_address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("First_name")
@@ -72,7 +71,10 @@ namespace BusinessObject.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Pub_id")
+                    b.Property<int>("Pub_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Pub_id1")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Publisher_date")
@@ -93,7 +95,7 @@ namespace BusinessObject.Migrations
 
                     b.HasKey("Book_id");
 
-                    b.HasIndex("Pub_id");
+                    b.HasIndex("Pub_id1");
 
                     b.ToTable("Books");
                 });
@@ -141,7 +143,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Publisher_name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
@@ -179,7 +180,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("First_name")
-                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -187,7 +187,6 @@ namespace BusinessObject.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Last_name")
-                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -202,16 +201,10 @@ namespace BusinessObject.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Pub_id")
+                    b.Property<int?>("Pub_id")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Pub_id1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Role_id")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Role_id1")
+                    b.Property<int?>("Role_id")
                         .HasColumnType("int");
 
                     b.Property<string>("Source")
@@ -219,9 +212,9 @@ namespace BusinessObject.Migrations
 
                     b.HasKey("User_id");
 
-                    b.HasIndex("Pub_id1");
+                    b.HasIndex("Pub_id");
 
-                    b.HasIndex("Role_id1");
+                    b.HasIndex("Role_id");
 
                     b.ToTable("Users");
                 });
@@ -230,7 +223,7 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Books")
-                        .HasForeignKey("Pub_id");
+                        .HasForeignKey("Pub_id1");
 
                     b.Navigation("Pub");
                 });
@@ -254,11 +247,11 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Users")
-                        .HasForeignKey("Pub_id1");
+                        .HasForeignKey("Pub_id");
 
                     b.HasOne("BusinessObject.Models.Role", "Role")
                         .WithMany("Users")
-                        .HasForeignKey("Role_id1");
+                        .HasForeignKey("Role_id");
 
                     b.Navigation("Pub");
 

@@ -18,7 +18,7 @@ namespace BusinessObject.Migrations
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Address = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email_address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Email_address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -31,7 +31,7 @@ namespace BusinessObject.Migrations
                 {
                     Pub_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Publisher_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Publisher_name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     State = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -62,20 +62,21 @@ namespace BusinessObject.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Type = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Pub_id = table.Column<int>(type: "int", nullable: true),
+                    Pub_id1 = table.Column<int>(type: "int", nullable: true),
                     Price = table.Column<int>(type: "int", nullable: false),
                     Advance = table.Column<int>(type: "int", nullable: false),
                     Royalty = table.Column<bool>(type: "bit", nullable: false),
                     Ytd_sales = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Notes = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Publisher_date = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Publisher_date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Pub_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Books", x => x.Book_id);
                     table.ForeignKey(
-                        name: "FK_Books_Publisher_Pub_id",
-                        column: x => x.Pub_id,
+                        name: "FK_Books_Publisher_Pub_id1",
+                        column: x => x.Pub_id1,
                         principalTable: "Publisher",
                         principalColumn: "Pub_id",
                         onDelete: ReferentialAction.Restrict);
@@ -91,9 +92,9 @@ namespace BusinessObject.Migrations
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Source = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    First_name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    First_name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     Middle_name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    Last_name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Last_name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     Hire_date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Role_id = table.Column<int>(type: "int", nullable: true),
                     Pub_id = table.Column<int>(type: "int", nullable: true)
@@ -154,9 +155,9 @@ namespace BusinessObject.Migrations
                 column: "Book_id1");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Books_Pub_id",
+                name: "IX_Books_Pub_id1",
                 table: "Books",
-                column: "Pub_id");
+                column: "Pub_id1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Pub_id",

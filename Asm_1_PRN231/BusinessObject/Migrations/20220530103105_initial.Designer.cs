@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessObject.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220529152434_initial_ver_4")]
-    partial class initial_ver_4
+    [Migration("20220530103105_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -71,7 +71,10 @@ namespace BusinessObject.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Pub_id")
+                    b.Property<int>("Pub_id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Pub_id1")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Publisher_date")
@@ -92,7 +95,7 @@ namespace BusinessObject.Migrations
 
                     b.HasKey("Book_id");
 
-                    b.HasIndex("Pub_id");
+                    b.HasIndex("Pub_id1");
 
                     b.ToTable("Books");
                 });
@@ -220,7 +223,7 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Books")
-                        .HasForeignKey("Pub_id");
+                        .HasForeignKey("Pub_id1");
 
                     b.Navigation("Pub");
                 });
