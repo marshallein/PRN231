@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj": {}
+    "F:\\work-study\\PRN231\\Project\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj": {
+    "F:\\work-study\\PRN231\\Project\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj",
+        "projectUniqueName": "F:\\work-study\\PRN231\\Project\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj",
         "projectName": "ApiWebCilent",
-        "projectPath": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj",
-        "packagesPath": "C:\\Users\\depza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\ApiWebSolution\\ApiWebCilent\\obj\\",
+        "projectPath": "F:\\work-study\\PRN231\\Project\\PRN231\\ApiWebSolution\\ApiWebCilent\\ApiWebCilent.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\work-study\\PRN231\\Project\\PRN231\\ApiWebSolution\\ApiWebCilent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\depza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

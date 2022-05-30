@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2c26570d-efe3-4907-b3b9-5723208b8478": {
+      "ProjectGuid": "2c26570d-efe3-4907-b3b9-5723208b8478",
+      "DisplayName": "ClientWebApi",
+      "ColorIndex": 0
+    },
+    "a6577aa7-feae-44b2-afa0-c761560f9d8d": {
+      "ProjectGuid": "a6577aa7-feae-44b2-afa0-c761560f9d8d",
+      "DisplayName": "BusinessObject",
+      "ColorIndex": 1
+    },
+    "a00c6feb-5078-4a0d-9a2e-7aaa291d088a": {
+      "ProjectGuid": "a00c6feb-5078-4a0d-9a2e-7aaa291d088a",
+      "DisplayName": "BookStore_WebAPI",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
