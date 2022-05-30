@@ -1,0 +1,16 @@
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\DataAccess\bin\Debug\net5.0\appsettings.json

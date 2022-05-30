@@ -1,0 +1,15 @@
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\bin\Debug\net5.0\TestGenDb.deps.json
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\bin\Debug\net5.0\TestGenDb.runtimeconfig.json
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\bin\Debug\net5.0\TestGenDb.runtimeconfig.dev.json
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\bin\Debug\net5.0\TestGenDb.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\bin\Debug\net5.0\TestGenDb.pdb
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.csproj.AssemblyReference.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.AssemblyInfoInputs.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.AssemblyInfo.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.csproj.CoreCompileInputs.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\refint\TestGenDb.dll
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.pdb
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\TestGenDb.genruntimeconfig.cache
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\TestGenDb\obj\Debug\net5.0\ref\TestGenDb.dll
