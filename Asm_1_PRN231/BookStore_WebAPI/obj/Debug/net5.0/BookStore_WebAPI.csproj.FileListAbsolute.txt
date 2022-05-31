@@ -136,6 +136,12 @@ C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\BookStore_Web
 C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.csproj.AssemblyReference.cache
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.AssemblyInfoInputs.cache
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.AssemblyInfo.cs
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.csproj.CoreCompileInputs.cache
+F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.MvcApplicationPartsAssemblyInfo.cache
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\appsettings.Development.json
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\appsettings.json
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\BookStore_WebAPI.exe
@@ -259,13 +265,6 @@ F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\DataAccess.dll
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\DataAccess.pdb
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\bin\Debug\net5.0\BusinessObject.pdb
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.csproj.AssemblyReference.cache
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.AssemblyInfoInputs.cache
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.AssemblyInfo.cs
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.csproj.CoreCompileInputs.cache
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.MvcApplicationPartsAssemblyInfo.cs
-F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.MvcApplicationPartsAssemblyInfo.cache
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\scopedcss\bundle\BookStore_WebAPI.styles.css
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\staticwebassets\BookStore_WebAPI.StaticWebAssets.Manifest.cache
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\BookStore_WebAPI\obj\Debug\net5.0\BookStore_WebAPI.RazorTargetAssemblyInfo.cache

@@ -80,7 +80,7 @@ namespace DataAccess.DAO
             var user = new User();
             using (var context = new DatabaseContext())
             {
-                user = context.Users.Where(u => u.Email_address == email && u.Password == password).FirstOrDefault();
+                user = context.Users.Include(x => x.Role).Where(u => u.Email_address == email && u.Password == password).FirstOrDefault();
             }
             return user;
         }

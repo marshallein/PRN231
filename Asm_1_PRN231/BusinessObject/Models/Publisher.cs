@@ -6,6 +6,11 @@ namespace BusinessObject.Models
 {
     public class Publisher
     {
+        public Publisher()
+        {
+            Users = new HashSet<User>();
+        }
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Pub_id { get; set; }
         public string Publisher_name { get; set; }
@@ -14,7 +19,5 @@ namespace BusinessObject.Models
         public string State { get; set; }
 
         public ICollection<User> Users { get; set; }
-
-        public ICollection<Book> Books { get; set; }
     }
 }

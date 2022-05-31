@@ -103,23 +103,15 @@ namespace BusinessObject.Migrations
                     b.Property<int>("Book_id")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Author_id1")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Author_order")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("Book_id1")
-                        .HasColumnType("int");
 
                     b.Property<int?>("Royalty_percentage")
                         .HasColumnType("int");
 
                     b.HasKey("Author_id", "Book_id");
 
-                    b.HasIndex("Author_id1");
-
-                    b.HasIndex("Book_id1");
+                    b.HasIndex("Book_id");
 
                     b.ToTable("BookAuthors");
                 });
@@ -196,10 +188,10 @@ namespace BusinessObject.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Pub_id")
+                    b.Property<int>("Pub_id")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Role_id")
+                    b.Property<int>("Role_id")
                         .HasColumnType("int");
 
                     b.Property<string>("Source")
@@ -217,7 +209,7 @@ namespace BusinessObject.Migrations
             modelBuilder.Entity("BusinessObject.Models.Book", b =>
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
-                        .WithMany("Books")
+                        .WithMany()
                         .HasForeignKey("Pub_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -229,11 +221,15 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Author", "Author")
                         .WithMany("BookAuthors")
-                        .HasForeignKey("Author_id1");
+                        .HasForeignKey("Author_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BusinessObject.Models.Book", "Book")
                         .WithMany("BookAuthors")
-                        .HasForeignKey("Book_id1");
+                        .HasForeignKey("Book_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Author");
 
@@ -244,11 +240,15 @@ namespace BusinessObject.Migrations
                 {
                     b.HasOne("BusinessObject.Models.Publisher", "Pub")
                         .WithMany("Users")
-                        .HasForeignKey("Pub_id");
+                        .HasForeignKey("Pub_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BusinessObject.Models.Role", "Role")
                         .WithMany()
-                        .HasForeignKey("Role_id");
+                        .HasForeignKey("Role_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Pub");
 
@@ -267,8 +267,6 @@ namespace BusinessObject.Migrations
 
             modelBuilder.Entity("BusinessObject.Models.Publisher", b =>
                 {
-                    b.Navigation("Books");
-
                     b.Navigation("Users");
                 });
 #pragma warning restore 612, 618

@@ -6,6 +6,11 @@ namespace BusinessObject.Models
 {
     public class Author
     {
+        public Author()
+        {
+            BookAuthors = new HashSet<BookAuthor>();
+        }
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Author_id { get; set; }
 

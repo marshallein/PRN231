@@ -10,6 +10,11 @@ namespace BusinessObject.Models
 {
     public class Book
     {
+        public Book()
+        {
+            BookAuthors = new HashSet<BookAuthor>();
+        }
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Book_id { get; set; }
         [Required]

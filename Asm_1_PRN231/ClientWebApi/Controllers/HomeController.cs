@@ -57,7 +57,7 @@ namespace ClientWebApi.Controllers
                     PropertyNameCaseInsensitive = true
                 };
                 User user = JsonSerializer.Deserialize<User>(result, options);
-                if (user.Email_address == "admin@admin.com")// hardcode
+                if (user.Role.Role_id == 1)
                 {
                     HttpContext.Session.SetString("admin", "true");
                     return RedirectToAction("Index", "Book");
@@ -65,7 +65,7 @@ namespace ClientWebApi.Controllers
                 else
                 {
                     HttpContext.Session.SetString("user", user.User_id.ToString());
-                    return RedirectToAction("EditProfile", "User");
+                    return RedirectToAction("Index", "User");
                 }
             }
 

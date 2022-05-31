@@ -33,7 +33,7 @@ namespace DataAccess.DAO
             var list = new List<Publisher>();
             using (var context = new DatabaseContext())
             {
-                list = context.Publisher.Include(p => p.Books).Include(p => p.Users).ToList();
+                list = context.Publisher.ToList();
             }
             return list;
         }

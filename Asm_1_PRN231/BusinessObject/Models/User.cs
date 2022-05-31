@@ -26,7 +26,10 @@ namespace BusinessObject.Models
         [MaxLength(30)]
         public string Last_name { get; set; }
         public DateTime Hire_date { get; set; }
-
+        [ForeignKey("Role")]
+        public int Role_id { get; set; }
+        [ForeignKey("Pub")]
+        public int Pub_id { get; set; }
         public Role Role { get; set; }
         public Publisher Pub { get; set; }
     }

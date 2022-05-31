@@ -15,7 +15,12 @@
       "ProjectGuid": "a00c6feb-5078-4a0d-9a2e-7aaa291d088a",
       "DisplayName": "BookStore_WebAPI",
       "ColorIndex": 2
+    },
+    "8da39aa7-7a4b-4fd4-92bd-266f60819c94": {
+      "ProjectGuid": "8da39aa7-7a4b-4fd4-92bd-266f60819c94",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

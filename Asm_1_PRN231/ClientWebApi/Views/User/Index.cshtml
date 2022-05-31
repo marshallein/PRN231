@@ -1,0 +1,93 @@
+﻿@model BusinessObject.Models.User
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Update User</h1>
+
+<h4>User</h4>
+<hr />
+<p>
+	<a asp-action="ListAuthor">Author List</a>
+</p>
+<hr />
+<p>
+	<a asp-action="ListBook">Book List</a>
+</p>
+<hr />
+<p>
+	<a asp-action="ListPublisher">Publisher List</a>
+</p>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="UpdateUser">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="User_id" class="control-label"></label>
+				<input asp-for="User_id" class="form-control" />
+				<span asp-validation-for="User_id" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Email_address" class="control-label"></label>
+				<input asp-for="Email_address" class="form-control" />
+				<span asp-validation-for="Email_address" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Password" class="control-label"></label>
+				<input asp-for="Password" class="form-control" />
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Phone" class="control-label"></label>
+				<input asp-for="Phone" class="form-control" />
+				<span asp-validation-for="Phone" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Source" class="control-label"></label>
+				<input asp-for="Source" class="form-control" />
+				<span asp-validation-for="Source" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="First_name" class="control-label"></label>
+				<input asp-for="First_name" class="form-control" />
+				<span asp-validation-for="First_name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Middle_name" class="control-label"></label>
+				<input asp-for="Middle_name" class="form-control" />
+				<span asp-validation-for="Middle_name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Last_name" class="control-label"></label>
+				<input asp-for="Last_name" class="form-control" />
+				<span asp-validation-for="Last_name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Hire_date" class="control-label"></label>
+				<input asp-for="Hire_date" class="form-control" />
+				<span asp-validation-for="Hire_date" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Role_id" class="control-label"></label>
+				<input asp-for="Role_id" class="form-control" />
+				<span asp-validation-for="Role_id" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Pub_id" class="control-label"></label>
+				<input asp-for="Pub_id" class="form-control" />
+				<span asp-validation-for="Pub_id" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Save" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+@section Scripts {
+    @{
+	await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
