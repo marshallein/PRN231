@@ -311,3 +311,12 @@ F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\R
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListAuthor.cshtml.g.cs
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListBook.cshtml.g.cs
 F:\work-study\PRN231\Project\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListPublisher.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\Author\Create.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\Author\Edit.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\Publisher\Create.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\Publisher\Edit.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\Publisher\Index.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListAuthor.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListBook.cshtml.g.cs
+C:\Users\depza\OneDrive\Documents\Study\prn221\PRN231\Asm_1_PRN231\ClientWebApi\obj\Debug\net5.0\Razor\Views\User\ListPublisher.cshtml.g.cs

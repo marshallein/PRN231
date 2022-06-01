@@ -7570,19 +7570,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\depza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\work-study\\PRN231\\Project\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\BookStore_WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\BookStore_WebAPI.csproj",
       "projectName": "BookStore_WebAPI",
-      "projectPath": "F:\\work-study\\PRN231\\Project\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\BookStore_WebAPI.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\work-study\\PRN231\\Project\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\BookStore_WebAPI.csproj",
+      "packagesPath": "C:\\Users\\depza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\Asm_1_PRN231\\BookStore_WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\depza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7596,8 +7596,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\work-study\\PRN231\\Project\\PRN231\\Asm_1_PRN231\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "F:\\work-study\\PRN231\\Project\\PRN231\\Asm_1_PRN231\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\Asm_1_PRN231\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\depza\\OneDrive\\Documents\\Study\\prn221\\PRN231\\Asm_1_PRN231\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -7649,7 +7649,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
