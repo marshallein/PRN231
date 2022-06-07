@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CodeFirstDemo.Models
 {
@@ -35,6 +36,14 @@ namespace CodeFirstDemo.Models
                 new InstrumentType { InstrumentTypeId = 3, InstrumentName = "guitar2" },
                 new InstrumentType { InstrumentTypeId = 4, InstrumentName = "guitar3" },
                 new InstrumentType { InstrumentTypeId = 5, InstrumentName = "guitar4" });
+        }
+    }
+
+    public static class DbServiceExtension
+    {
+        public static void AddDatabaseService(this IServiceCollection services, string connectionString)
+        {
+            services.AddDbContext<ContextDemo>(options => options.UseSqlServer(connectionString));
         }
     }
 }
