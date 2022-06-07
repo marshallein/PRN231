@@ -44,6 +44,7 @@ namespace ClientWebApi.Controllers
 
         public async Task<IActionResult> UpdateUser(User user)
         {
+            apiUrl = "https://localhost:5001/api/Users";
             HttpResponseMessage response = await httpClient.PutAsJsonAsync<User>(apiUrl + "/" + user.User_id, user);
             response.EnsureSuccessStatusCode();
 

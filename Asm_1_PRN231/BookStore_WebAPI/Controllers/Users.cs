@@ -84,11 +84,11 @@ namespace BookStore_WebAPI.Controllers
 
         // PUT api/<Users>/5
         [HttpPut("{id}")]
-        public ActionResult UpdateUser(int id, [FromBody] string value)
+        public ActionResult UpdateUser(int id, [FromBody] User user)
         {
             try
             {
-                var user = _userRepository.GetUserById(id);
+                var userToEdit = _userRepository.GetUserById(id);
                 if (user != null)
                 {
                     _userRepository.UpdateUser(user);

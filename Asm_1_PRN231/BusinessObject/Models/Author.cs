@@ -14,7 +14,7 @@ namespace BusinessObject.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Author_id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="ko dc de trong")]
         public string First_name { get; set; }
         [Required]
         public string Last_name { get; set; }
