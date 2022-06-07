@@ -1,8 +1,11 @@
 using Lab_2_Odata.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData;
+using Microsoft.AspNetCore.OData.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,7 +33,9 @@ namespace Lab_2_Odata
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddOData(options => options.Select().Filter().Count().OrderBy().Expand().SetMaxTop(100)
+            .AddRouteComponents("odata", GetEdmModel()));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Lab_2_Odata", Version = "v1" });
@@ -47,9 +52,31 @@ namespace Lab_2_Odata
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Lab_2_Odata v1"));
             }
 
+            app.UseODataBatching();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.Use(next => context =>
+            {
+                var endpoint = context.GetEndpoint();
+                if (endpoint != null)
+                {
+                    return next(context);
+                }
+
+                IEnumerable<string> templates;
+                IODataRoutingMetadata metaData = endpoint.Metadata.GetMetadata<ODataRoutingMetadata>();
+
+                if (metaData != null)
+                {
+                    templates = metaData.Template.GetTemplates();
+
+                }
+
+                return next(context);
+            });
 
             app.UseAuthorization();
 
