@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>Update a Reservation <a href="Index.html" class="btn btn-sm btn-primary">Back</a></h2>
+        <div class="form-group">
+            <label for="Id">ID</label>
+            <input type="text" name="" id="Id" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" name="" id="Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="startLocation">Start Location</label>
+            <input type="text" name="" id="StartLocation" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="EndLocation">End Location</label>
+            <input type="text" name="" id="EndLocation" class="form-control">
+        </div>
+        <div class="text-center panel-body">
+            <button type="submit" class="btn btn-sm btn-primary" id="UpdateButton">Update</button>
+        </div>
+        <div id="resultDiv" style="display: none;">
+            <h2>Reservation</h2>
+            <table class="table table-sm table-striped table-bordered m-2">
+                <thead><tr><th>ID</th><th>Name</th><th>Start Location</th><th>End Location</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            GetReservation();
+
+            function GetReservation(){
+                let params = (new URL(document.location)).searchParams;
+                let id = params.get("id");
+                $.ajax({
+                    url:"https://localhost:5001/api/Reservation/"+id,
+                    type:"get",
+                    contentType:"application/json",
+                    success:function(result, status, xhr){
+                        $("#Id").val(result["id"]);
+                        $("#Name").val(result["name"]);
+                        $("#StartLocation").val(result["startLocation"]);
+                        $("#EndLocation").val(result["endLocation"]);
+                    },
+                    error:function(xhr, status, error){
+                        console.log(xhr);
+                    }
+                });
+            }
+
+            $("#UpdateButton").click(function(e){
+                let params = (new URL(document.location)).searchParams;
+                let id = params.get("id");
+
+                data = new FormData();
+                data.append("Id", $("#Id").val());
+                data.append("Name", $("#Name").val());
+                data.append("StartLocation", $("#StartLocation").val());
+                data.append("EndLocation", $("#EndLocation").val());
+
+                $.ajax({
+                    url:"https://localhost:5001/api/Reservation",
+                    type:"put",
+                    data:data,
+                    processData:false,
+                    contentType:false,
+                    success:function(result, status, xhr){
+                        var str = "<tr>";
+                            str += "<td>"+result["id"]+"</td>";
+                            str += "<td>"+result["name"]+"</td>";
+                            str += "<td>"+result["startLocation"]+"</td>";
+                            str += "<td>"+result["endLocation"]+"</td>";
+                            str += "</tr>";
+                        $("table tbody").append(str);
+                        $("#resultDiv").show();
+                    },
+                    error:function(xhr, status, error){
+                        console.log(xhr);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
