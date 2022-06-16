@@ -57,6 +57,7 @@ namespace Lab_2_Odata.DataSources
 
             };
             listBook.Add(book);
+            return listBook;
         }
     }
 }

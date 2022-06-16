@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h2>All Reservations</h2>
+        <a href="AddReservation.html" class="btn btn-sm btn-primary">Add Reservation</a>
+        <a href="GetReservation.html" class="btn btn-sm btn-primary">Get Reservation</a>
+        <table class="table table-sm table-striped table-bordered m-2">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start Location</th>
+                    <th>End Location</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="index.js">
+    </script>
+    <script>
+        GetList();
+    </script>
+</body>
+
+</html>

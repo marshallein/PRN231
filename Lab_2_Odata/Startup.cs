@@ -34,7 +34,7 @@ namespace Lab_2_Odata
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BookContext>(option => option.UseInMemoryDatabase("BookLists"));
-
+            services.AddControllers();
             services.AddControllers().AddOData(options => options.Select().Filter().Count().OrderBy().Expand().SetMaxTop(100)
             .AddRouteComponents("odata", GetEdmModel()));
 
@@ -59,26 +59,6 @@ namespace Lab_2_Odata
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.Use(next => context =>
-            {
-                var endpoint = context.GetEndpoint();
-                if (endpoint != null)
-                {
-                    return next(context);
-                }
-
-                IEnumerable<string> templates;
-                IODataRoutingMetadata metaData = endpoint.Metadata.GetMetadata<ODataRoutingMetadata>();
-
-                if (metaData != null)
-                {
-                    templates = metaData.Template.GetTemplates();
-
-                }
-
-                return next(context);
-            });
 
             app.UseAuthorization();
 

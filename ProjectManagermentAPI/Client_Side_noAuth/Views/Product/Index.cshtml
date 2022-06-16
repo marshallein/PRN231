@@ -1,0 +1,53 @@
+﻿@model IEnumerable<API_Side.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        ShowAllProduct();
+
+        function ShowAllProduct => () {
+            $("table tbody").html("");
+            $ajax({
+                url:
+            })
+        }
+    })
+</script>
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                (ProductId)
+            </th>
+            <th>
+                (ProductName)
+            </th>
+            <th>
+                (CategoryId)
+            </th>
+            <th>
+                (UnitsInStock)
+            </th>
+            <th>
+                (UnitPrice)
+            </th>
+            <th>
+                (Update)
+            </th>
+            <th>
+                (Delete)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
